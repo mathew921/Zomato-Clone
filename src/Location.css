@@ -1,0 +1,63 @@
+.location-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: transparent;
+}
+
+.location-popup {
+    position: absolute;
+    top: 84px;
+    left: max(16px, calc(50% - 449px));
+    width: 450px;
+    max-width: calc(100vw - 32px);
+    box-sizing: border-box;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.detect-location-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    background: white;
+    text-align: left;
+    cursor: pointer;
+}
+
+.location-box {
+    position: relative;
+    background: white;
+    width: 100%;
+    max-width: 480px;
+    max-height: 85vh;
+    overflow-y: auto;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.detect-icon {
+    color: #ef4f5f;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.detect-location-btn h3 {
+    margin: 0 0 4px;
+    color: #ef4f5f;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.detect-location-btn p {
+    margin: 0;
+    color: #999;
+    font-size: 14px;
+}
